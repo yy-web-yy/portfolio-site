@@ -1,0 +1,499 @@
+/* ------------------ リセット ------------------ */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------ レイアウト ------------------ */
+.header-top, .main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  padding: 2rem;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  margin: 0.6rem auto 0;
+  background: linear-gradient(to right, #1f2d3d, #007acc);
+  border-radius: 4px;
+}
+
+/* ------------------ ヘッダー（モバイルファースト） ------------------ */
+.header {
+  background-color: #fff;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-logo {
+  margin-bottom: 0rem;
+}
+
+.header-logo img {
+  max-height: 80px;
+}
+
+/* ------------------ ナビゲーション（モバイルファースト） ------------------ */
+.header-nav {
+  display: block;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.header-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.header-nav li {
+  width: 50%;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  background-color: #f0f0f0;
+}
+
+/* ------------------ SNSアイコン ------------------ */
+.header-sns {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.header-sns i {
+  font-size: 18px;
+  color: #333;
+  transition: opacity 0.3s;
+}
+
+.header-sns a:hover i {
+  opacity: 0.6;
+}
+
+/* ------------------ ヒーローセクション ------------------ */
+.hero {
+  position: relative;
+  height: 300px;
+  background-image: url("../image/hero-img.JPG");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-inner h2,
+.hero-inner p {
+  color: #1f2d3d;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+/* ------------------ WORKSセクション ------------------ */
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.work-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.work-card:last-of-type {
+  margin-bottom: 0;
+}
+
+a.work-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.work-card:hover {
+  transform: translateY(-4px);
+}
+
+.work-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  padding: 1rem 0.5rem 0;
+}
+
+.work-text {
+  padding: 1rem;
+  text-align-last: left;
+}
+
+.work-text h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.work-text p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* ------------------ ABOUTセクション ------------------ */
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-lead {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  color: #1f2d3d;
+  margin-bottom: 1rem;
+}
+
+/* ------------------ SKILLSセクション ------------------ */
+.skills-list {
+  margin: 0;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.skills-list dt {
+  font-weight: bold;
+  color: #1f2d3d;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list dt:first-of-type {
+  margin-top: 0;
+}
+
+.skills-list dd {
+  color: #333;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5rem;
+}
+
+.skills-list dd:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ------------------ CONTACTセクション ------------------ */
+.contact-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.contact-inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.4s ease-out;
+}
+
+.scroll-fade.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-illust {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.contact-thanks {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  background-image: url('../image/cloud-shape-shadow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130% auto;
+  padding: 4rem 3rem 5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+
+.contact-message {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.contact-button {
+  display: inline-block;
+  font-size: 1rem;
+  color: #4a90e2;
+  background-color: #fff;
+  border: 2px solid #4a90e2;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #4a90e2;
+  color: #fff;
+}
+
+/* ------------------ トップに戻るボタン ------------------ */
+.back-to-top-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  background-color: #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top-icon.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top-icon:hover {
+  transform: translateY(-4px);
+}
+
+/* ------------------ フッター ------------------ */
+footer {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 1em;
+}
+
+/* ------------------ PCスタイル（768px以上） ------------------ */
+@media screen and (min-width: 768px) {
+  .header-logo img {
+    max-height: 120px;
+  }
+
+  .header-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.2rem;
+  }
+
+  .header-nav ul {
+    display: flex;
+    gap: 2rem;
+    border: none;
+  }
+
+  .header-nav li {
+    width: auto;
+    border: none;
+  }
+
+  .header-nav a {
+    font-size: 1.2rem;
+    height: auto;
+    padding: 0;
+    line-height: normal;
+  }
+
+  .header-sns {
+    margin-top: 0;
+    gap: 1rem;
+  }
+
+  .header-sns i {
+    font-size: 24px;
+    color: #333;
+    transition: opacity 0.3s;
+  }
+
+  .works {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .work-card {
+    width: calc(50% - 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .work-card:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  .about-inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about-text {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .about-lead {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .skills-list dd {
+    font-size: 1rem;
+  }
+
+  .contact-thanks {
+    padding: 4rem 3rem 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .back-to-top-icon {
+    bottom: 3rem;
+    right: 1.3rem;
+    width: 60px;
+    height: 60px;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  .back-to-top-icon:hover {
+    transform: translateY(-6px);
+  }
+}

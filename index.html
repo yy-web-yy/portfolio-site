@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>PORTFOLIO | Yuya Yanagawa - Web制作・コーディング</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-top">
+        <h1 class="header-logo">
+          <a href="index.html">
+            <img src="image/header-logo.png" width="1000" height="400" alt="ポートフォリオサイトのロゴ">
+          </a>
+        </h1>
+
+        <!-- SNSアイコン（将来的に使用） -->
+        <div class="header-sns">
+          <a href="#" target="_blank" aria-label="X（Twitter）">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- ナビゲーション -->
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#works">WORKS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>「シンプルで伝わるコーディングを」</h2>
+      <p>千葉県在住。オンライン講師として活動しながら、Web制作を学習・実践中。</p>
+    </div>
+  </section>
+
+  <!-- メインセクション -->
+  <main class="main">
+    <!-- WORKSセクション -->
+    <section id="works" class="section">
+      <h2>WORKS</h2>
+      <div class="works">
+        <a href="https://yy-web-yy.github.io/odagiri-gym/" target="_blank" rel="noopener noreferrer" class="work-card">
+          <img src="image/odagirigym-rebuild-top.jpg" width="2000" height="2000" alt="オダギリジム再構築版のトップビュー" class="work-img">
+          <div class="work-text">
+            <h3>オダギリジム公式サイト・再構築デザイン案</h3>
+            <p>現サイトをもとにゼロから再設計。HTML/CSS/JSで制作し、構成や操作性の見直しも行った提案バージョン</p>
+          </div>
+        </a>
+        <a href="https://yy-web-yy.github.io/zakkashop-lp/" target="_blank" rel="noopener noreferrer" class="work-card">
+          <img src="image/zakka-lp-top.jpg" width="2000" height="2000" alt="雑貨ショップ風ランディングページのトップビュー" class="work-img">
+          <div class="work-text">
+            <h3>雑貨ショップ風ランディングページ</h3>
+            <p>配色や余白を意識し、やさしい雰囲気を表現。レイアウトやパーツ配置に工夫を凝らした模写制作。</p>
+          </div>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="work-card">
+          <img src="image/portfolio-site-top.jpg" width="2000" height="2000" alt="ポートフォリオサイトのトップビュー" class="work-img">
+          <div class="work-text">
+            <h3>ポートフォリオサイト</h3>
+            <p>自己紹介・実績・スキルを伝えるために設計。モバイルファーストやアニメーションも実装。</p>
+          </div>
+        </a>
+        <a href="https://odagirigym.com/" target="_blank" rel="noopener noreferrer" class="work-card">
+          <img src="image/odagirigym-top.jpg" width="2000" height="200" alt="オダギリジムのトップビュー" class="work-img">
+          <div class="work-text">
+            <h3>オダギリジム公式サイト</h3>
+            <p>WordPressテーマをカスタマイズし、予約導線やモバイル対応を強化した実際のジム紹介サイト。</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUTセクション -->
+    <section id="about" class="section">
+      <h2>ABOUT</h2>
+      <div class="about-inner">
+        <div class="about-img">
+          <img src="image/about-profile-image.png" alt="柳川雄哉のプロフィールイラスト" width="1024" height="1024">
+        </div>
+        <div class="about-text">
+          <p class="about-lead">柳川雄哉／千葉県在住</p>
+          <p>
+            職業訓練校でWeb制作を学び、現在はオンライン講師として働きながら実務を想定したWebサイト制作に取り組んでいます。<br>
+            筋トレや観葉植物の手入れ、ペットの世話が趣味で、コツコツと積み重ねることが得意です。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLSセクション -->
+    <section id="skills" class="section">
+      <h2>SKILLS</h2>
+      <dl class="skills-list">
+        <dt>HTML / CSS</dt>
+        <dd>
+          規則性のあるコーディングが可能です<br>
+          レスポンシブ対応・Flexbox・Gridなどに対応しています
+        </dd>
+
+        <dt>JavaScript</dt>
+        <dd>
+          簡単なアニメーションや動的な操作が可能です（jQuery含む）
+        </dd>
+
+        <dt>Photoshop / Illustrator</dt>
+        <dd>
+          バナー制作や画像調整、簡単なロゴ作成に使用可能です
+        </dd>
+
+        <dt>WordPress</dt>
+        <dd>
+          テーマのカスタマイズや固定ページ作成、レスポンシブ対応ができます
+        </dd>
+
+        <dt>SEO</dt>
+        <dd>
+          構造的に正しいマークアップや見出し設計など、基本的なSEO対策を意識したコーディングが可能です
+        </dd>
+
+        <dt>Git / GitHub</dt>
+        <dd>
+          Gitによるバージョン管理、GitHub Pagesを使った公開が可能です<br>
+          簡単なブランチ運用も対応できます
+        </dd>
+
+        <dt>使用可能なエディター</dt>
+        <dd>
+          Visual Studio Codeをメインに使用しています<br>
+          業務環境に応じてDreamweaverにも対応可能です
+        </dd>
+      </dl>
+    </section>
+
+    <!-- CONTACTセクション -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-inner">
+        <div class="contact-container scroll-fade">
+          <img src="image/contact-illust.png" alt="おじぎするやながわ" class="contact-illust">
+          <p class="contact-thanks">ご覧いただきありがとうございます</p>
+        </div>
+        <h2>CONTACT</h2>
+        <p class="contact-message">下記のメールアドレスにお気軽にご連絡ください</p>
+        <a class="contact-button" href="mailto:y.yanagawa31@gmail.com">
+          y.yanagawa31@gmail.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <small>&copy; 2025 YUYA YANAGAWA</small>
+  </footer>
+
+  <!-- トップに戻るボタン -->
+  <a href="#" class="back-to-top-icon" aria-label="トップに戻る">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24">
+      <path d="M12 2L5 9h4v9h6V9h4z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
